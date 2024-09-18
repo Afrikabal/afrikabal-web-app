@@ -9,6 +9,10 @@ import { FaBars } from 'react-icons/fa';
 import { CgClose } from 'react-icons/cg';
 import { FaCaretRight } from 'react-icons/fa';
 import { FaCaretDown } from "react-icons/fa";
+import Personal from './Personal';
+import Business from './Business';
+import Company from './Company';
+import Help from './Help';
 
 function Header() {
     const [toggle, setToggle] = useState(false);
@@ -19,26 +23,30 @@ function Header() {
 
     return (
         <>
-            <div className='flex justify-between text-sm px-12 p-3 shadow-md text-green-600 items-center'>
+            <div className='flex justify-between text-sm px-12 p-3 shadow-md text-green-600 items-center font-muli'>
                 <div className='flex gap-20 items-center'>
                     <Image src={afrikabal} alt="Afrikabal Logo" width={60} height={60} />
                     <div className='hidden md:flex gap-10'>
                         <ul className='flex gap-10'>
-                            <div className='flex items-center gap-2'>
-                                <li>Personal</li>
+                            <div className='relative group flex items-center gap-2'>
+                                <li className='cursor-pointer'>Personal</li>
                                 <FaCaretDown />
+                                <Personal />
                             </div>
-                            <div className='flex items-center gap-2'>
-                                <li>Business</li>
+                            <div className='relative group flex items-center gap-2'>
+                                <li className='cursor-pointer'>Business</li>
                                 <FaCaretDown />
+                                <Business />
                             </div>
-                            <div className='flex items-center gap-2'>
-                                <li>Company</li>
+                            <div className='relative group flex items-center gap-2'>
+                                <li className='cursor-pointer'>Company</li>
                                 <FaCaretDown />
+                                <Company />
                             </div>
-                            <div className='flex items-center gap-2'>
-                                <li>Help</li>
+                            <div className='relative group flex items-center gap-2'>
+                                <li className='cursor-pointer'>Help</li>
                                 <FaCaretDown />
+                                <Help />
                             </div>
                         </ul>
                     </div>
