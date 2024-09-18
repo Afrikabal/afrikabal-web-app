@@ -220,4 +220,4 @@ Before opening a Pull Request, test the app locally:
 
 ## Questions?
 
-If you have any questions or run into issues, feel free to reach out via Slack or open an issue in the repository.
+If you have any questions or run into issues, feel free to reach out via the Whatsapp Group or open an issue in the repository.
