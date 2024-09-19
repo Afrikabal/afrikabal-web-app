@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import afrikabal from '@/images/afrikabal.png';
 import Button from './Button';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaCarAlt, FaCoins, FaCreditCard, FaGift, FaGlobe, FaHome, FaLifeRing, FaLightbulb, FaMobileAlt, FaMoneyCheck, FaPiggyBank, FaTv, FaWallet, FaWifi } from 'react-icons/fa';
 import { CgClose } from 'react-icons/cg';
 import { FaCaretRight } from 'react-icons/fa';
 import { FaCaretDown } from "react-icons/fa";
@@ -13,13 +13,24 @@ import Personal from './Personal';
 import Business from './Business';
 import Company from './Company';
 import Help from './Help';
+import { TbMoneybag } from 'react-icons/tb';
+import { BsFillSuitSpadeFill } from 'react-icons/bs';
+import PersonalView from './PersonalView';
+import BusinessView from './BusinessView';
 
 function Header() {
     const [toggle, setToggle] = useState(false);
+    const [toggleComponent, setToggleComponent] = useState<Number>(0);
+
 
     const headerToggle = () => {
         setToggle(prev => !prev);
+        setToggleComponent(0);
     };
+
+    const openComponent = ()  => {
+        setToggleComponent()
+    }
 
     return (
         <>
@@ -43,7 +54,7 @@ function Header() {
                                 <FaCaretDown />
                                 <Company />
                             </div>
-                            <div className='relative group flex items-center gap-2'>
+                            <div className='relative group  flex items-center gap-2'>
                                 <li className='cursor-pointer'>Help</li>
                                 <FaCaretDown />
                                 <Help />
@@ -71,7 +82,7 @@ function Header() {
             </div>
 
             {/* Conditionally render the mobile menu content based on the `toggle` state */}
-            {toggle && (
+            {( toggle && toggleComponent == 0 ) && (
                 <div className='md:hidden w-screen my-5'>
                     <div className='flex gap-7'>
                         <Button />
@@ -82,7 +93,7 @@ function Header() {
                     <div className='w-screen text-green-600'>
                         <ul className='w-screen'>
                             <div className='flex py-3 px-4 justify-between'>
-                                <li>Personal</li>
+                                <li><button onClick={openComponent} >Personal</button></li>
                                 <FaCaretRight />
                             </div>
                             <hr className='text-black' />
@@ -113,6 +124,37 @@ function Header() {
                     </div>
                 </div>
             )}
+
+                {toggleComponent == 1 ? (
+                
+                <div className='relative group  flex items-center gap-2 '>
+                        <PersonalView />
+                        
+                    </div>  
+                
+            ) : toggleComponent == 2 ?  (
+                    <div className='relative group  flex items-center gap-2 '>
+                        <BusinessView />
+
+                    </div>      
+                ) : toggleComponent == 3 ? (
+                        <div className='relative group  flex items-center gap-2 '>
+                             hello
+
+                        </div> 
+                    ) : toggleComponent == 4 ? (
+                            <div className='relative group  flex items-center gap-2 '>
+                                world
+
+                            </div>
+                        ) : (
+                                <div className='relative group  flex items-center gap-2 '>
+                                 no
+
+                                </div>
+            )
+
+            }
         </>
     );
 }
