@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import BodyContent from '../components/BodyContent';
 
 function layout({
     children,
@@ -10,7 +11,8 @@ function layout({
 ) {
   return (
       <div className=' bg-white h-screen w-screen text-black' >
-          <Header />
+      <Header />
+      <BodyContent/>
           {children}
       
     </div>
