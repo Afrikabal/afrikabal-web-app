@@ -1,11 +1,10 @@
 "use client";
-
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import afrikabal from '@/images/afrikabal.png';
 import Button from './Button';
-import { FaBars, FaCarAlt, FaCoins, FaCreditCard, FaGift, FaGlobe, FaHome, FaLifeRing, FaLightbulb, FaMobileAlt, FaMoneyCheck, FaPiggyBank, FaTv, FaWallet, FaWifi } from 'react-icons/fa';
+import { FaArrowLeft, FaBars, FaCarAlt, FaCoins, FaCreditCard, FaGift, FaGlobe, FaHome, FaLifeRing, FaLightbulb, FaMobileAlt, FaMoneyCheck, FaPiggyBank, FaTv, FaWallet, FaWifi } from 'react-icons/fa';
 import { CgClose } from 'react-icons/cg';
 import { FaCaretRight } from 'react-icons/fa';
 import { FaCaretDown } from "react-icons/fa";
@@ -13,31 +12,29 @@ import Personal from './Personal';
 import Business from './Business';
 import Company from './Company';
 import Help from './Help';
-import { TbMoneybag } from 'react-icons/tb';
-import { BsFillSuitSpadeFill } from 'react-icons/bs';
 import PersonalView from './PersonalView';
 import BusinessView from './BusinessView';
+import CompanyView from './CompanyView';
+import HelpView from './HelpView';
+import { IoIosArrowBack } from "react-icons/io";
+
 
 function Header() {
     const [toggle, setToggle] = useState(false);
     const [toggleComponent, setToggleComponent] = useState<Number>(0);
-
+    
 
     const headerToggle = () => {
         setToggle(prev => !prev);
         setToggleComponent(0);
     };
 
-    const openComponent = ()  => {
-        setToggleComponent()
-    }
-
     return (
         <>
             <div className='flex justify-between text-sm px-12 p-3 shadow-md text-green-600 items-center font-muli'>
                 <div className='flex gap-20 items-center'>
                     <Image src={afrikabal} alt="Afrikabal Logo" width={60} height={60} />
-                    <div className='hidden md:flex gap-10'>
+                    <div className='hidden  rs:flex gap-10'>
                         <ul className='flex gap-10'>
                             <div className='relative group flex items-center gap-2'>
                                 <li className='cursor-pointer'>Personal</li>
@@ -63,12 +60,12 @@ function Header() {
                     </div>
                 </div>
 
-                <div className='hidden md:flex items-center gap-7'>
+                <div className='hidden rs:flex items-center gap-7'>
                     <Link href={"/"}>Sign In</Link>
                     <Button />
                 </div>
 
-                <span className='md:hidden text-black'>
+                <span className='rs:hidden text-black'>
                     {!toggle ? (
                         <button onClick={headerToggle}>
                             <FaBars />
@@ -81,9 +78,8 @@ function Header() {
                 </span>
             </div>
 
-            {/* Conditionally render the mobile menu content based on the `toggle` state */}
-            {( toggle && toggleComponent == 0 ) && (
-                <div className='md:hidden w-screen my-5'>
+            {(toggle && toggleComponent === 0) && (
+                <div className='rs:hidden w-screen my-5'>
                     <div className='flex gap-7'>
                         <Button />
                         <button className='p-2 px-8 text-sm bg-green-100 rounded-xl font-bold text-green-600 w-fit hover:translate-y-[-5px]'>
@@ -93,17 +89,17 @@ function Header() {
                     <div className='w-screen text-green-600'>
                         <ul className='w-screen'>
                             <div className='flex py-3 px-4 justify-between'>
-                                <li><button onClick={openComponent} >Personal</button></li>
+                                <li><button onClick={() => setToggleComponent(1)}>Personal</button></li>
                                 <FaCaretRight />
                             </div>
                             <hr className='text-black' />
                             <div className='flex py-3 px-4 justify-between'>
-                                <li>Business</li>
+                                <button onClick={() => setToggleComponent(2)}>Business</button>
                                 <FaCaretRight />
                             </div>
                             <hr className='text-black' />
                             <div className='flex py-3 px-4 justify-between'>
-                                <li>Company</li>
+                                <button onClick={() => setToggleComponent(3)}>Company</button>
                                 <FaCaretRight />
                             </div>
                             <hr className='text-black' />
@@ -116,7 +112,7 @@ function Header() {
                             </div>
                             <hr className='text-black' />
                             <div className='flex py-3 px-4 justify-between'>
-                                <li>Help</li>
+                                <button onClick={() => setToggleComponent(4)}>Help</button>
                                 <FaCaretRight />
                             </div>
                             <hr className='text-black' />
@@ -125,36 +121,45 @@ function Header() {
                 </div>
             )}
 
-                {toggleComponent == 1 ? (
-                
-                <div className='relative group  flex items-center gap-2 '>
-                        <PersonalView />
-                        
-                    </div>  
-                
-            ) : toggleComponent == 2 ?  (
+                <>
+                    {toggleComponent === 1 && (
                     <div className='relative group  flex items-center gap-2 '>
-                        <BusinessView />
-
-                    </div>      
-                ) : toggleComponent == 3 ? (
-                        <div className='relative group  flex items-center gap-2 '>
-                             hello
-
-                        </div> 
-                    ) : toggleComponent == 4 ? (
-                            <div className='relative group  flex items-center gap-2 '>
-                                world
-
-                            </div>
-                        ) : (
-                                <div className='relative group  flex items-center gap-2 '>
-                                 no
-
-                                </div>
-            )
-
-            }
+                        <button onClick={() => {
+                            setToggleComponent(0)
+                        }} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-green-900 ml-4 text-green-700 text-sm z-10 '><IoIosArrowBack className='inline mr-3' />     
+                       back</button>
+                            <PersonalView />
+                        </div>
+                    )}
+                    {toggleComponent === 2 && (
+                    <div className='relative group  flex items-center gap-2 '>
+                        <button onClick={() => {
+                            setToggleComponent(0)
+                        }} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-green-900 ml-4 text-green-700 text-sm z-10 '><IoIosArrowBack className='inline mr-3' />
+                            back</button>
+                            <BusinessView />
+                        </div>
+                    )}
+                    {toggleComponent === 3 && (
+                    <div className='relative group  flex items-center gap-2 '>
+                        <button onClick={() => {
+                            setToggleComponent(0)
+                        }} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-green-900 ml-4 text-green-700 text-sm z-10 '><IoIosArrowBack className='inline mr-3' />
+                            back</button>
+                            <CompanyView />
+                        </div>
+                    )}
+                    {toggleComponent === 4 && (
+                    <div className='relative group  flex items-center gap-2 '>
+                        <button onClick={() => {
+                            setToggleComponent(0)
+                        }} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-green-900 ml-4 text-green-700 text-sm z-10 '><IoIosArrowBack className='inline mr-3' />
+                            back</button>
+                            <HelpView />
+                        </div>
+                    )}
+                </>
+           
         </>
     );
 }

@@ -5,7 +5,7 @@ import { TbMoneybag } from 'react-icons/tb'
 
 function BusinessView() {
   return (
-      <div className='absolute left-0  pt-6 top-0 flex flex-row bg-white mt-2 w-fit max-h-[500px] overflow-y-scroll no-scrollbar rounded-sm'>
+      <div className='absolute left-0  pt-12 top-0 flex flex-row bg-white mt-2 w-fit max-h-[500px] overflow-y-scroll no-scrollbar rounded-sm'>
           <div className='p-2 px-5'>
               <ul className='flex flex-col gap-2 text-gray-600 text-sm text-nowrap'>
                   <li className='flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-green-600 cursor-pointer'>
