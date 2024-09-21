@@ -2,9 +2,11 @@ import React from 'react'
 import AppStore from '@/images/app_store.png'
 import gif from '@/images/fzQG.gif'
 import Image from 'next/image'
+import FeatureCard from './FeatureCard'
 
 function BodyContent() {
-  return (
+    return (
+      <>
       <section className="flex flex-col md:flex-row items-center justify-between bg-white py-12 px-4 md:px-16">
           
           <div className="md:w-1/2 text-center md:text-left">
@@ -61,7 +63,10 @@ function BodyContent() {
                   />
               </div>
           </div>
-      </section>
+            </section>
+
+            <FeatureCard />
+            </>
   )
 }
 
