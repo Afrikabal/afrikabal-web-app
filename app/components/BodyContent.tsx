@@ -3,6 +3,7 @@ import AppStore from '@/images/app_store.png'
 import gif from '@/images/fzQG.gif'
 import Image from 'next/image'
 import FeatureCard from './FeatureCard'
+import DebitBanner from './DebitBanner'
 
 function BodyContent() {
     return (
@@ -56,7 +57,7 @@ function BodyContent() {
                  
                   <Image
                       src={gif} 
-                      alt="Kuda Card"
+                      alt="afrikabal Card"
                       width={300}
                       height={500}
                       className="rounded-lg"
@@ -66,6 +67,7 @@ function BodyContent() {
             </section>
 
             <FeatureCard />
+            <DebitBanner />
             </>
   )
 }
