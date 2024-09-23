@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import { MdOutlineArrowBackIos } from "react-icons/md";
 import { IoMdEyeOff } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
 import { FaLock } from "react-icons/fa6";
@@ -21,20 +20,22 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-white  min-h-screen h-full relative">
-      <div className='fixed top-0 left 0 shadow-md w-full h-16 px-6 py-2 bg-white z-[1000]'>
+    <div className="bg-white  min-h-screen h-full relative font-muli">
+      <div className='flex justify-between fixed top-0 left 0 shadow-md w-full h-16 px-6 py-2 bg-white z-[1000]'>
         <Link href='/landing'>
           <Image alt="Afrikabal logo" src={Afrikabal} width={60} height={60} />
         </Link>
+        <Link href="/signup"><button className='bg-green-100 h-10 rounded-lg text-xs p-2 mr-5 text-green-400 font-bold transition-transform duration-300 hover:-translate-y-0.5'>Create an account</button></Link>
+        
       </div>
 
       <div className='w-1/3 h-12 bg-green-50 absolute left-24 top-20 rounded-md text-xs mt-6 shadow-md'>
         <div className='text-green-600 px-6'>
-          <div className=''>
+          <div className='absolute top-4'>
             <FaLock />
           </div>
-          <div className='flex flex-col justify-normal mx-6'>
-            <p className=''>Please check that you are visiting the correct URL</p>
+          <div className='flex flex-col justify-normal mx-6 py-2'>
+            <p className='text-black/50'>Please check that you are visiting the correct URL</p>
             <Link href="/login" className='font-extrabold'>https://app.afrikabal.com</Link>
           </div>
         </div>
@@ -54,7 +55,7 @@ const Login = () => {
           <input 
             type="email"
             placeholder='example@gmail.com'
-            className='bg-white/70 text-black/80 shadow-md rounded-sm text-xs font-light py-2 px-4 my-2'
+            className='bg-white/70 text-black/80 shadow-md rounded-sm text-xs font-light py-2 px-4 my-2 h-10'
             value={email}
             onChange={(e) => setEmail(e.target.value)} 
           />
@@ -71,9 +72,9 @@ const Login = () => {
           />
           {
             showPassword ? 
-              <FaEye className='absolute bottom-45 mb-4 right-12 text-black/50 cursor-pointer' onClick={() => setShowPassword(!showPassword)} />
+              <FaEye className='absolute bottom-40 mb-4 right-12 text-black/50 cursor-pointer' onClick={() => setShowPassword(!showPassword)} />
             : 
-              <IoMdEyeOff className='absolute bottom-45 mb-4 right-12 text-black/50 cursor-pointer' onClick={() => setShowPassword(!showPassword)} />
+              <IoMdEyeOff className='absolute bottom-40 mb-4 right-12 text-black/50 cursor-pointer' onClick={() => setShowPassword(!showPassword)} />
           }
         </div>
         <div className='inline text-xs'>
