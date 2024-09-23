@@ -25,12 +25,12 @@ const Login = () => {
         <Link href='/landing'>
           <Image alt="Afrikabal logo" src={Afrikabal} width={60} height={60} />
         </Link>
-        <Link href="/signup"><button className='bg-green-100 h-10 rounded-lg text-xs p-2 mr-5 text-green-400 font-bold transition-transform duration-300 hover:-translate-y-0.5'>Create an account</button></Link>
+        <Link href="/signup"><button className='bg-lime-100 h-10 rounded-lg text-xs p-2 mr-5 text-lime-400 font-bold transition-transform duration-300 hover:-translate-y-0.5'>Create an account</button></Link>
         
       </div>
 
-      <div className='w-1/3 h-12 bg-green-50 absolute left-24 top-20 rounded-md text-xs mt-6 shadow-md'>
-        <div className='text-green-600 px-6'>
+      <div className='w-1/3 h-12 bg-lime-50 absolute left-24 top-20 rounded-md text-xs mt-6 shadow-md'>
+        <div className='text-lime-600 px-6'>
           <div className='absolute top-4'>
             <FaLock />
           </div>
@@ -79,14 +79,14 @@ const Login = () => {
         </div>
         <div className='inline text-xs'>
           <span className='text-black/50'>Forgot password?</span>
-          <Link href="/reset" className='text-green-600'>Reset it</Link>
+          <Link href="/reset" className='text-lime-600'>Reset it</Link>
         </div>
 
-        <button type="submit" className='bg-green-600 rounded-md text-white text-sm font-semibold my-3 text-center py-1 w-1/3 h-12'>
+        <button type="submit" className='bg-lime-600 rounded-md text-white text-sm font-semibold my-3 text-center py-1 w-1/3 h-12'>
           Sign in
         </button>
         <div className='text-xs text-black/50'>
-          If you don't have a Kuda account, download the app <Link href="https://bit.ly/getAfrikabal" className='text-green-600'>here</Link> and open an account in a few minutes.
+          If you don't have a Kuda account, download the app <Link href="https://bit.ly/getAfrikabal" className='text-lime-600'>here</Link> and open an account in a few minutes.
         </div>
       </form>
     </div>
