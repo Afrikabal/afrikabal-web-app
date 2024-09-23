@@ -1,13 +1,11 @@
 "use client";
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import afrikabal from '@/images/afrikabal.png';
 import Button from './Button';
-import { FaArrowLeft, FaBars, FaCarAlt, FaCoins, FaCreditCard, FaGift, FaGlobe, FaHome, FaLifeRing, FaLightbulb, FaMobileAlt, FaMoneyCheck, FaPiggyBank, FaTv, FaWallet, FaWifi } from 'react-icons/fa';
+import { FaArrowLeft, FaBars, FaCaretDown, FaCaretRight } from 'react-icons/fa';
 import { CgClose } from 'react-icons/cg';
-import { FaCaretRight } from 'react-icons/fa';
-import { FaCaretDown } from "react-icons/fa";
 import Personal from './Personal';
 import Business from './Business';
 import Company from './Company';
@@ -18,23 +16,22 @@ import CompanyView from './CompanyView';
 import HelpView from './HelpView';
 import { IoIosArrowBack } from "react-icons/io";
 
-
 function Header() {
     const [toggle, setToggle] = useState(false);
-    const [toggleComponent, setToggleComponent] = useState<Number>(0);
-    
+    const [toggleComponent, setToggleComponent] = useState<number>(0);
 
     const headerToggle = () => {
-        setToggle(prev => !prev);
+        setToggle((prev) => !prev);
         setToggleComponent(0);
     };
 
     return (
         <>
-            <div className='flex justify-between text-sm px-12 p-3 shadow-md text-green-600 items-center font-muli'>
+            {/* Header container */}
+            <div className='flex justify-between text-sm px-12 p-3 shadow-md text-lime-600 items-center font-muli fixed top-0 w-full z-50 bg-white'>
                 <div className='flex gap-20 items-center'>
                     <Image src={afrikabal} alt="Afrikabal Logo" width={60} height={60} />
-                    <div className='hidden  rs:flex gap-10'>
+                    <div className='hidden rs:flex gap-10'>
                         <ul className='flex gap-10'>
                             <div className='relative group flex items-center gap-2'>
                                 <li className='cursor-pointer'>Personal</li>
@@ -51,7 +48,7 @@ function Header() {
                                 <FaCaretDown />
                                 <Company />
                             </div>
-                            <div className='relative group  flex items-center gap-2'>
+                            <div className='relative group flex items-center gap-2'>
                                 <li className='cursor-pointer'>Help</li>
                                 <FaCaretDown />
                                 <Help />
@@ -78,15 +75,19 @@ function Header() {
                 </span>
             </div>
 
-            {(toggle && toggleComponent === 0) && (
+            {/* Spacer to prevent content from being hidden under the fixed header */}
+            <div className='h-[80px]' />
+
+            {/* Mobile menu and toggled views */}
+            {toggle && toggleComponent === 0 && (
                 <div className='rs:hidden w-screen my-5'>
                     <div className='flex gap-7'>
                         <Button />
-                        <button className='p-2 px-8 text-sm bg-green-100 rounded-xl font-bold text-green-600 w-fit hover:translate-y-[-5px]'>
+                        <button className='p-2 px-8 text-sm bg-green-100 rounded-xl font-bold text-lime-600 w-fit hover:translate-y-[-5px]'>
                             Sign In
                         </button>
                     </div>
-                    <div className='w-screen text-green-600'>
+                    <div className='w-screen text-lime-600'>
                         <ul className='w-screen'>
                             <div className='flex py-3 px-4 justify-between'>
                                 <li><button onClick={() => setToggleComponent(1)}>Personal</button></li>
@@ -121,45 +122,41 @@ function Header() {
                 </div>
             )}
 
-                <>
-                    {toggleComponent === 1 && (
-                    <div className='relative group  flex items-center gap-2 '>
-                        <button onClick={() => {
-                            setToggleComponent(0)
-                        }} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-green-900 ml-4 text-green-700 text-sm z-10 '><IoIosArrowBack className='inline mr-3' />     
-                       back</button>
-                            <PersonalView />
-                        </div>
-                    )}
-                    {toggleComponent === 2 && (
-                    <div className='relative group  flex items-center gap-2 '>
-                        <button onClick={() => {
-                            setToggleComponent(0)
-                        }} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-green-900 ml-4 text-green-700 text-sm z-10 '><IoIosArrowBack className='inline mr-3' />
-                            back</button>
-                            <BusinessView />
-                        </div>
-                    )}
-                    {toggleComponent === 3 && (
-                    <div className='relative group  flex items-center gap-2 '>
-                        <button onClick={() => {
-                            setToggleComponent(0)
-                        }} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-green-900 ml-4 text-green-700 text-sm z-10 '><IoIosArrowBack className='inline mr-3' />
-                            back</button>
-                            <CompanyView />
-                        </div>
-                    )}
-                    {toggleComponent === 4 && (
-                    <div className='relative group  flex items-center gap-2 '>
-                        <button onClick={() => {
-                            setToggleComponent(0)
-                        }} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-green-900 ml-4 text-green-700 text-sm z-10 '><IoIosArrowBack className='inline mr-3' />
-                            back</button>
-                            <HelpView />
-                        </div>
-                    )}
-                </>
-           
+            {/* Toggled component views */}
+            <>
+                {toggleComponent === 1 && (
+                    <div className='relative group flex items-center gap-2'>
+                        <button onClick={() => setToggleComponent(0)} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-lime-600 ml-4 text-lime-600 text-sm z-10'>
+                            <IoIosArrowBack className='inline mr-3' /> back
+                        </button>
+                        <PersonalView />
+                    </div>
+                )}
+                {toggleComponent === 2 && (
+                    <div className='relative group flex items-center gap-2'>
+                        <button onClick={() => setToggleComponent(0)} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-lime-600 ml-4 text-lime-600 text-sm z-10'>
+                            <IoIosArrowBack className='inline mr-3' /> back
+                        </button>
+                        <BusinessView />
+                    </div>
+                )}
+                {toggleComponent === 3 && (
+                    <div className='relative group flex items-center gap-2'>
+                        <button onClick={() => setToggleComponent(0)} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-lime-600 ml-4 text-lime-600 text-sm z-10'>
+                            <IoIosArrowBack className='inline mr-3' /> back
+                        </button>
+                        <CompanyView />
+                    </div>
+                )}
+                {toggleComponent === 4 && (
+                    <div className='relative group flex items-center gap-2'>
+                        <button onClick={() => setToggleComponent(0)} className='my-2 w-full bg-white text-start p-2 rounded-sm hover:text-lime-600 ml-4 text-lime-600 text-sm z-10'>
+                            <IoIosArrowBack className='inline mr-3' /> back
+                        </button>
+                        <HelpView />
+                    </div>
+                )}
+            </>
         </>
     );
 }
