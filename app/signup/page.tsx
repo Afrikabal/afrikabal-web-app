@@ -35,8 +35,8 @@ const Signup = () => {
         </Link>
       </div>
 
-      <div className='w-1/3 h-12 bg-green-50 absolute left-24 top-20 rounded-md text-xs'>
-        <div className='text-green-600 px-6'>
+      <div className='w-1/3 h-12 bg-lime-50 absolute left-24 top-20 rounded-md text-xs'>
+        <div className='text-lime-600 px-6'>
           <div className='absolute top-4'>
             <FaLock />
           </div>
@@ -52,7 +52,7 @@ const Signup = () => {
         className='flex flex-col md:flex-wrap justify-between absolute left-24 top-32 px-6 py-12 bg-white rounded-md w-1/3 border border-black/10 shadow-md mt-3'
       >
         <div className='my-2'>
-          <p className='text-green-600 relative flex flex-row '>
+          <p className='text-lime-600 relative flex flex-row '>
             <MdOutlineArrowBackIos className='m-1 h-3 w-3' /><span className='mb-2 text-sm'>Back</span>
           </p>
           <p className='text-black font-semibold text-lg'>Email & Password</p>
@@ -106,7 +106,7 @@ const Signup = () => {
           }
         </div>
 
-        <button type="submit" className='bg-green-600 rounded-md text-white text-sm font-semibold my-3 text-center py-1 w-1/3 h-10'>
+        <button type="submit" className='bg-lime-600 rounded-md text-white text-sm font-semibold my-3 text-center py-1 w-1/3 h-10'>
           Next
         </button>
       </form>
