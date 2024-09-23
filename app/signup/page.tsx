@@ -28,7 +28,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="bg-white h-screen relative">
+    <div className="bg-white  h-screen relative">
       <div className='fixed top-0 left 0 shadow-md w-full h-16 px-6 py-2'>
         <Link href='/landing'>
           <Image alt="Afrikabal logo" src={Afrikabal} width={60} height={60} />
