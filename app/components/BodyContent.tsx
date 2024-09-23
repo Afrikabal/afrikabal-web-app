@@ -7,6 +7,8 @@ import DebitBanner from './DebitBanner'
 import ManagementBanner from './ManagementBanner'
 import SaveMoneyBanner from './SaveMoneyBanner'
 import SafetyBanner from './SafetyBanner'
+import HelpBanner from './HelpBanner'
+import FeesBanner from './FeesBanner'
 
 function BodyContent() {
     return (
@@ -74,6 +76,8 @@ function BodyContent() {
             <ManagementBanner />
             <SaveMoneyBanner />
             <SafetyBanner />
+            <HelpBanner />
+            <FeesBanner />
             </>
   )
 }
