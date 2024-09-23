@@ -16,13 +16,13 @@ function FeesBanner() {
           </div>
           <div className="max-w-lg text-center md:text-left">
               <h1 className="text-xl md:text-5xl font-bold text-lime-600 mb-4">
-                  Turn off access, <br /> turn on safety.
+                  Fees as clear as <br /> glass.
               </h1>
               <p className="text-gray-600 mb-6">
-                  Life happens. Milk spills. Debit cards go missing. If that ever happens, you can block your missing card on the app so no one can use it. We’d like to see them try.
+                  We’re serious about free banking, and we will never, ever charge you for anything without your consent.
               </p>
               <a href="#" className="text-lime-600 font-semibold hover:underline">
-                  Learn more about Cards &rarr;
+                  See all Our Fees &rarr;
               </a>
           </div>
 

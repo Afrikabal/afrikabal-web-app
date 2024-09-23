@@ -9,6 +9,7 @@ import SaveMoneyBanner from './SaveMoneyBanner'
 import SafetyBanner from './SafetyBanner'
 import HelpBanner from './HelpBanner'
 import FeesBanner from './FeesBanner'
+import Testimonials from './Testimonials'
 
 function BodyContent() {
     return (
@@ -78,6 +79,9 @@ function BodyContent() {
             <SafetyBanner />
             <HelpBanner />
             <FeesBanner />
+            <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+                <Testimonials />
+            </div>
             </>
   )
 }
