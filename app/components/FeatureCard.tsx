@@ -6,7 +6,7 @@ function FeatureCard() {
     const features = [
         {
             icon: <FaCreditCard />, 
-            title: "Order a Kuda Visa card on the app with pickup and delivery options."
+            title: "Order an Afrikabal Visa card on the app with pickup and delivery options."
         },
         {
             icon: < BiSolidPieChart/>, 
@@ -35,7 +35,7 @@ function FeatureCard() {
                         className="bg-white shadow-md rounded-lg p-6 text-center transition-transform hover:scale-105"
                     >
                         {/* Icon */}
-                        <div className="icon-wrapper bg-green-100 text-green-600 text-md p-1  w-fit h-fit rounded-full">
+                        <div className="icon-wrapper bg-green-100 text-lime-600 text-md p-1  w-fit h-fit rounded-full">
                             {feature.icon}
                         </div>
 

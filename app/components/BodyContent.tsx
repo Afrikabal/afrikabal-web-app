@@ -1,9 +1,12 @@
 import React from 'react'
 import AppStore from '@/images/app_store.png'
-import gif from '@/images/fzQG.gif'
+import gif from '@/images/harvest.jpg'
 import Image from 'next/image'
 import FeatureCard from './FeatureCard'
 import DebitBanner from './DebitBanner'
+import ManagementBanner from './ManagementBanner'
+import SaveMoneyBanner from './SaveMoneyBanner'
+import SafetyBanner from './SafetyBanner'
 
 function BodyContent() {
     return (
@@ -11,8 +14,8 @@ function BodyContent() {
       <section className="flex flex-col md:flex-row items-center justify-between bg-white py-12 px-4 md:px-16">
           
           <div className="md:w-1/2 text-center md:text-left">
-              <h1 className="text-4xl font-bold text-green-600 mb-4">
-                  The money app for Africans.
+              <h1 className="text-4xl font-bold text-lime-600 mb-4">
+                  The Agritech App for Africans.
               </h1>
               <p className="text-lg mb-6 text-gray-700">
                   Make free transfers, enjoy cashless payment options and earn interest
@@ -37,7 +40,7 @@ function BodyContent() {
                       href="https://play.google.com/store/apps/details?id=com.kuda.android" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-green-500 text-white flex items-center px-4 py-2 rounded-lg shadow-lg hover:bg-green-600 transition"
+                      className="bg-lime-600 text-neutral-700 flex items-center px-4 py-2 rounded-lg shadow-lg hover:bg-lime-400 transition"
                   >
                      
                       <span className="text-sm">Get it on Google Play</span>
@@ -58,8 +61,8 @@ function BodyContent() {
                   <Image
                       src={gif} 
                       alt="afrikabal Card"
-                      width={300}
-                      height={500}
+                      width={500}
+                      height={700}
                       className="rounded-lg"
                   />
               </div>
@@ -68,6 +71,9 @@ function BodyContent() {
 
             <FeatureCard />
             <DebitBanner />
+            <ManagementBanner />
+            <SaveMoneyBanner />
+            <SafetyBanner />
             </>
   )
 }
