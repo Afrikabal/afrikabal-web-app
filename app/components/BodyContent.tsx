@@ -7,6 +7,10 @@ import DebitBanner from './DebitBanner'
 import ManagementBanner from './ManagementBanner'
 import SaveMoneyBanner from './SaveMoneyBanner'
 import SafetyBanner from './SafetyBanner'
+import HelpBanner from './HelpBanner'
+import FeesBanner from './FeesBanner'
+import Testimonials from './Testimonials'
+import Partners from './Partners'
 
 function BodyContent() {
     return (
@@ -74,6 +78,12 @@ function BodyContent() {
             <ManagementBanner />
             <SaveMoneyBanner />
             <SafetyBanner />
+            <HelpBanner />
+            <FeesBanner />
+            <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+                <Testimonials />
+            </div>
+            <Partners />
             </>
   )
 }
