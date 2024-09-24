@@ -1,30 +1,36 @@
 import React from 'react'
 import Image from 'next/image';
+import profile1 from '@/images/profile2.jpg'
+import profile2 from '@/images/profile3.jpg'
+import profile3 from '@/images/profile4.jpg'
+import profile4 from '@/images/profile6.jpg'
+import profile5 from '@/images/profile7.jpg'
+
 const testimonials = [
     {
-        text: 'I like the fact that kuda Microfinance Bank doesn’t only run a no-fee policy and 25 free transfers in a month but you can only create a budget plan to control your spending pattern. Really really nice!!',
+        text: 'Well done to the guys at @afrikabalbank had a dispensing error on Friday night... and my money is back in my account!',
         name: 'Adebambo Oyekan',
-        avatar: '/images/profiles2.jpg'
-    },
-    {
-        text: 'I highly recommend this app, it does what it says "The bank of the free". I have received my Kuda card.',
-        name: 'Ifeanyichukwu Obaji',
-        avatar: '/images/profile3.jpg'
+        avatar: profile1
     },
     {
         text: 'Well done to the guys at @afrikabalbank had a dispensing error on Friday night... and my money is back in my account!',
-        name: 'Mu\'azu Muhammad Kudu',
-        avatar: '/images/profile4.jpg'
+        name: 'Ifeanyichukwu Obaji',
+        avatar: profile2
+    },
+    {
+        text: 'Well done to the guys at @afrikabalbank had a dispensing error on Friday night... and my money is back in my account!',
+        name: 'Mugisha Herve',
+        avatar: profile3
     },
     {
         text: 'Well done to the guys at @afikabalbank had a dispensing error on Friday night... and my money is back in my account!',
-        name: 'Mu\'azu Muhammad Kudu',
-        avatar: '/images/profile6.jpg'
+        name: 'Rukundo Joseph',
+        avatar: profile4
     },
     {
         text: 'Well done to the guys at @afrikabalbank had a dispensing error on Friday night... and my money is back in my account!',
-        name: 'Mu\'azu Muhammad Kudu',
-        avatar: '/images/profile7.jpg'
+        name: 'Umwari Denyse',
+        avatar: profile5
     }
     
 ];
@@ -33,6 +39,9 @@ function Testimonials() {
     const duplicatedTestimonials = [...testimonials, ...testimonials];
   return (
       <div className="overflow-hidden">
+          <div className='text-center py-10'>
+              <h2 className='text-3xl font-bold text-lime-600 mb-6'>Don’t just take our word for it</h2>
+          </div>
           <div className="flex animate-slide">
               {duplicatedTestimonials.map((testimonial, index) => (
                   <div key={index} className="flex-shrink-0 w-64 p-4 bg-white shadow rounded mx-2">
