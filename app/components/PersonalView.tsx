@@ -1,8 +1,8 @@
 
-import router from 'next/router';
-import React, { useEffect, useState } from 'react';
+
+import React from 'react';
 import { BsFillSuitSpadeFill } from 'react-icons/bs'
-import { FaArrowLeft, FaCarAlt, FaCoins, FaCreditCard, FaGift, FaGlobe, FaHome, FaLifeRing, FaLightbulb, FaMobileAlt, FaMoneyCheck, FaPiggyBank, FaTv, FaWallet, FaWifi} from 'react-icons/fa'
+import { FaCarAlt, FaCoins, FaCreditCard, FaGift, FaGlobe, FaHome, FaLifeRing, FaLightbulb, FaMobileAlt, FaMoneyCheck, FaPiggyBank, FaTv, FaWallet, FaWifi} from 'react-icons/fa'
 
 import { TbMoneybag } from 'react-icons/tb'
 

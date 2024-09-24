@@ -1,5 +1,4 @@
 import React from 'react'
-import AppStore from '@/images/app_store.png'
 import gif from '@/images/harvest.jpg'
 import Image from 'next/image'
 import FeatureCard from './FeatureCard'
@@ -11,6 +10,9 @@ import HelpBanner from './HelpBanner'
 import FeesBanner from './FeesBanner'
 import Testimonials from './Testimonials'
 import Partners from './Partners'
+import ComparisonTable from './ComparisonTable'
+import More from './More'
+import Join from './Join'
 
 function BodyContent() {
     return (
@@ -80,10 +82,13 @@ function BodyContent() {
             <SafetyBanner />
             <HelpBanner />
             <FeesBanner />
-            <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+            <div className="min-h-screen flex items-center justify-center">
                 <Testimonials />
             </div>
             <Partners />
+            <ComparisonTable />
+            <More />
+            <Join />
             </>
   )
 }

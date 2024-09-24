@@ -15,7 +15,7 @@ import Visa from '@/images/Visa-logo-02.png'
 
 function Partners() {
   return (
-      <div className="bg-white py-12">
+      <div className="bg-gray-50 py-12">
           <div className="container mx-auto  ">
               <div className="text-center">
                   <h2 className="text-2xl font-bold text-lime-600">Our Partners</h2>

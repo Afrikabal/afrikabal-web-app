@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import BodyContent from '../components/BodyContent';
+import Footer from '../components/Footer';
 
 function layout({
     children,
@@ -12,7 +13,8 @@ function layout({
   return (
       <div className=' bg-white h-screen w-screen text-black' >
       <Header />
-      <BodyContent/>
+      <BodyContent />
+      <Footer />
           {children}
       
     </div>

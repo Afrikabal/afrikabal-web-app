@@ -86,7 +86,7 @@ const Login = () => {
           Sign in
         </button>
         <div className='text-xs text-black/50'>
-          If you don't have a Kuda account, download the app <Link href="https://bit.ly/getAfrikabal" className='text-lime-600'>here</Link> and open an account in a few minutes.
+          If you don&apos;t have a Afrikabal account, download the app <Link href="https://bit.ly/getAfrikabal" className='text-lime-600'>here</Link> and open an account in a few minutes.
         </div>
       </form>
     </div>

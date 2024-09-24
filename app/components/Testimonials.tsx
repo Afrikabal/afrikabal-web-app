@@ -42,7 +42,7 @@ function Testimonials() {
           <div className='text-center py-10'>
               <h2 className='text-3xl font-bold text-lime-600 mb-6'>Don’t just take our word for it</h2>
           </div>
-          <div className="flex animate-slide">
+          <div className="flex animate-slide shadow-2xl">
               {duplicatedTestimonials.map((testimonial, index) => (
                   <div key={index} className="flex-shrink-0 w-64 p-4 bg-white shadow rounded mx-2">
                       <p className="text-gray-700">{testimonial.text}</p>
