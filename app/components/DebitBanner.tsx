@@ -12,7 +12,7 @@ function DebitBanner() {
               <p className="text-gray-600 mb-6">
                   We designed a money app for your lifestyle, and you can get a debit card to go with it. That&apos;s all you need to make the right money moves.
               </p>
-              <a href="#" className="text-lime-600 font-semibold hover:underline">
+              <a href="signup" className="text-lime-600 font-semibold hover:underline">
                   Open An Account in Minutes &rarr;
               </a>
           </div>

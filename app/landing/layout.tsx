@@ -11,8 +11,9 @@ function layout({
 
 ) {
   return (
-      <div className=' bg-white h-screen w-screen text-black' >
+      <div className=' bg-white h-screen w-screen overflow-x-hidden text-black' >
       <Header />
+      
       <BodyContent />
       <Footer />
           {children}

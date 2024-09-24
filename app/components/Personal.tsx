@@ -5,7 +5,8 @@ import { TbMoneybag } from 'react-icons/tb'
 
 function Personal() {
   return (
-        <div className='absolute left-0  pt-6 top-full hidden group-hover:flex flex-row bg-white shadow-lg mt-2 w-fit h-fit rounded-sm'>
+      <div className='absolute left-0  pt-6 top-full hidden group-hover:flex  flex-row bg-white shadow-lg mt-2 w-fit h-fit rounded-sm'>
+               
             <div className='p-2 px-5'>
                 <ul className="flex flex-col gap-2 text-gray-600 text-sm text-nowrap">
                     <li className="flex items-center gap-1 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">

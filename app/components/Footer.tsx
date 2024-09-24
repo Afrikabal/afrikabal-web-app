@@ -15,8 +15,8 @@ function Footer() {
                   <div className="md:col-span-1">
                       <Image
                           src={Afrikabal}
-                          alt="Kuda Logo"
-                          className="h-8 mb-4"
+                          alt="Afrikabal Logo"
+                          className="h-12 w-16 mb-4"
                       />
                   </div>
 
@@ -78,19 +78,22 @@ function Footer() {
               </div>
 
             
-              <div className="flex justify-center space-x-4 mb-8">
+              <div className="flex justify-center space-x-4 items-center mb-3">
                   <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
                       <Image src={AppStore} alt="App Store" className="h-40 w-40" />
                   </a>
                   <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
                       <Image src={Googleplay} alt="App Store" className="h-40 w-40" />
                   </a>
-                  <a href="/login" target="_blank" rel="noopener noreferrer" >
+                  <a href="/login" target="_blank" className='bg-lime-600 rounded-md p-2 gap-2 flex flex-row h-fit items-center ' rel="noopener noreferrer" >
                       {/* <Image src={AppStore} alt="App Store" className="h-40 w-40" /> */}
                       <span>
-                          <FaGlobe />
+                          <FaGlobe size={26} />
                       </span>
-                      Sign in to Afrikabal On The Web
+                      <div className='text-xs' >
+                          <h4>Sign in to Afrikabal</h4>
+                          <h4>On The Web</h4>
+                      </div>
                   </a>
               </div>
 
@@ -105,22 +108,22 @@ function Footer() {
                       </p>
 
                       <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                          <a href="#" className="text-gray-600 hover:text-lime-600">
+                          <a href="http://x.com" className="text-gray-600 hover:text-lime-600">
                               <FaTwitter className="h-6 w-6" />
                           </a>
-                          <a href="#" className="text-gray-600 hover:text-lime-600">
+                          <a href="http://instagram.com" className="text-gray-600 hover:text-lime-600">
                               <FaInstagram className="h-6 w-6" />
                           </a>
-                          <a href="#" className="text-gray-600 hover:text-lime-600">
+                          <a href="http://facebook.com" className="text-gray-600 hover:text-lime-600">
                               <FaFacebook className="h-6 w-6" />
                           </a>
-                          <a href="#" className="text-gray-600 hover:text-lime-600">
+                          <a href="http://youtube.com" className="text-gray-600 hover:text-lime-600">
                               <FaYoutube className="h-6 w-6" />
                           </a>
-                          <a href="#" className="text-gray-600 hover:text-lime-600">
+                          <a href="http://medium.com" className="text-gray-600 hover:text-lime-600">
                               <FaMedium className="h-6 w-6" />
                           </a>
-                          <a href="#" className="text-gray-600 hover:text-lime-600">
+                          <a href="http://linkedin.com" className="text-gray-600 hover:text-lime-600">
                               <FaLinkedin className="h-6 w-6" />
                           </a>
                       </div>
