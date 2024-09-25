@@ -55,7 +55,7 @@ function Testimonials() {
                               className="rounded-full"
                           />
                           <div className="ml-2">
-                              <p className="font-bold">{testimonial.name}</p>
+                              <p className="font-bold text-black">{testimonial.name}</p>
                           </div>
                       </div>
                   </div>
