@@ -1,6 +1,4 @@
 import React from 'react'
-import gif from '@/images/harvest.jpg'
-import Image from 'next/image'
 import FeatureCard from './FeatureCard'
 import DebitBanner from './DebitBanner'
 import ManagementBanner from './ManagementBanner'
