@@ -10,7 +10,7 @@ export default function DynamicLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <div>
+        <div className="font-pacifico">
              <Header />
             {children}
         </div>    

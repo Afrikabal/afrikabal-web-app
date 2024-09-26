@@ -25,53 +25,53 @@ function Footer() {
                       <div>
                           <h3 className="text-lg font-semibold text-lime-600">Personal</h3>
                           <ul>
-                              <li><a href="#" className="hover:text-lime-600">Discover Personal</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Transfer & Spend</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Save</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Investments</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Kuda card</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Discover Personal</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Transfer & Spend</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Save</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Investments</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Kuda card</a></li>
                           </ul>
                       </div>
                       <div>
                           <h3 className="text-lg font-semibold text-lime-600">Business</h3>
                           <ul>
-                              <li><a href="#" className="hover:text-lime-600">Disc  over Business</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Business Registration</a></li>
-                              <li><a href="#" className="hover:text-lime-600">softPOS</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Invoicing</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Salary Loan</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Business API</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Join Kuda Business</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Discover Business</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Business Registration</a></li>
+                              <li><a href="/" className="hover:text-lime-600">softPOS</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Invoicing</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Salary Loan</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Business API</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Join Kuda Business</a></li>
                           </ul>
                       </div>
                       <div>
                           <h3 className="text-lg font-semibold text-lime-600">Company</h3>
                           <ul>
-                              <li><a href="#" className="hover:text-lime-600">Blog</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Press</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Join Our Team</a></li>
-                              <li><a href="#" className="hover:text-lime-600">About Us</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Blog</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Press</a></li>
+                              <li><a href="/signup" className="hover:text-lime-600">Join Our Team</a></li>
+                              <li><a href="/" className="hover:text-lime-600">About Us</a></li>
                           </ul>
                       </div>
                       <div>
                           <h3 className="text-lg font-semibold text-lime-600">Help</h3>
                           <ul>
-                              <li><a href="#" className="hover:text-lime-600">Get Help</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Scam Awareness</a></li>
-                              <li><a href="#" className="hover:text-lime-600">FAQs</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Security</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Contact Us</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Self Help</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Get Help</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Scam Awareness</a></li>
+                              <li><a href="/" className="hover:text-lime-600">FAQs</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Security</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Contact Us</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Self Help</a></li>
                           </ul>
                       </div>
                       <div>
                           <h3 className="text-lg font-semibold text-lime-600">Transparency</h3>
                           <ul>
-                              <li><a href="#" className="hover:text-lime-600">Terms & Conditions</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Privacy Policy</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Information Security Policy</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Cookie Policy</a></li>
-                              <li><a href="#" className="hover:text-lime-600">Whistleblowing Policy</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Terms & Conditions</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Privacy Policy</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Information Security Policy</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Cookie Policy</a></li>
+                              <li><a href="/" className="hover:text-lime-600">Whistleblowing Policy</a></li>
                           </ul>
                       </div>
                   </div>

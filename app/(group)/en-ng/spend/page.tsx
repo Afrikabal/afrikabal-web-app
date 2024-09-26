@@ -7,7 +7,7 @@ import Footer from '@/app/components/Footer'
 
 function Spend() {
   return (
-    <div>
+    <div className='font-pacifico'>
           <BodyContent title='Send money for free anytime.' content='Your Afrikabal account comes with 25 free transfers to other banks every month. That’s up to 15,000 naira saved on transfers every year.' redirect=<Button /> image=<Image
               src={FreePay}
               alt="afrikabal Card"
