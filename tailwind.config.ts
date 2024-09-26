@@ -8,9 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        muli: ['Muli', 'sans-serif']
-      },
+     fontFamily: {
+                pacifico: ['Pacifico', 'cursive'],
+                lora: ['Lora', 'serif'],
+            },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
