@@ -9,7 +9,7 @@ function ComparisonTable() {
               Choose the freedom you need.
           </h1>
           <div className="overflow-x-auto shadow-2xl">
-              <table className="min-w-full bg-white shadow-md border rounded-lg px-8">
+              <table className="min-w-full bg-white shadow-md border rounded-lg">
                   <thead>
                       <tr className='border-b border-gray-300'>
                           <th className="px-6 py-6 text-left text-lg font-semibold text-lime-600"> </th>

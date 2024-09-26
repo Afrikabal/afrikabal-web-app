@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Join() {
     return (
-        <div className="bg-lime-50 py-16 flex items-center justify-center">
+        <div className="bg-lime-50 py-16 px-20 flex items-center justify-center">
             <div className="flex flex-col md:flex-row items-center max-w-6xl px-6 gap-20 bg-white rounded-lg shadow-lg overflow-hidden">
 
                 {/* Left Section: Text */}

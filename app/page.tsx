@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <LandingLayout>
-      <div className='bg-white h-screen w-screen overflow-x-hidden text-black'>
+      <div className='bg-white h-screen w-screen overflow-x-hidden text-black font-pacifico'>
         <Header />
         <BodyContent
           title='The money app for Africans.'
@@ -38,17 +38,17 @@ export default function Home() {
                 href="https://apps.apple.com/app/kuda-bank/id1483960795"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white flex items-center px-4 py-2 rounded-lg shadow-lg hover:bg-gray-800 transition"
+              
               >
-                <span className="text-sm">Download on the App Store</span>
+               <Image src={AppStore} alt='app store' className='w-40 h-40'/>
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.kuda.android"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-lime-600 text-neutral-700 flex items-center px-4 py-2 rounded-lg shadow-lg hover:bg-lime-400 transition"
+              
               >
-                <span className="text-sm">Get it on Google Play</span>
+                <Image src={GooglePlay} alt='google play' className='w-40 h-40'/>
               </a>
             </>
           }

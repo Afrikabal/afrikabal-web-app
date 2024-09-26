@@ -5,7 +5,7 @@ import { FaPaperPlane, FaBriefcase } from 'react-icons/fa'
 
 function More() {
   return (
-      <div className="py-10 bg-white">
+      <div className="py-10 px-20 bg-white">
           <h2 className="text-3xl font-bold text-center text-lime-600 mb-10">More for you</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
