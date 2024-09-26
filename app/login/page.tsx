@@ -20,7 +20,7 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-white  min-h-screen h-full relative font-muli">
+    <div className="bg-white  min-h-screen h-full relative font-pacifico">
       <div className='flex justify-between fixed top-0 left 0 shadow-md w-full h-16 px-6 py-2 bg-white z-[1000]'>
         <Link href='/landing'>
           <Image alt="Afrikabal logo" src={Afrikabal} width={60} height={60} />
