@@ -33,7 +33,7 @@ function Personal() {
                         Save
                       </li>
                   </a>
-                  <a href="">
+                  <a href="/investments">
                     <li className="flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-green-100 text-lime-600 p-1 rounded-full'>
                             <FaWallet />

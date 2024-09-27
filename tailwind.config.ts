@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
      fontFamily: {
-                pacifico: ['Pacifico', 'cursive'],
+                poppins: ['Poppins', 'sans-serif'],
                 lora: ['Lora', 'serif'],
             },
       colors: {
