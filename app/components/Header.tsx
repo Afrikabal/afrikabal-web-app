@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import afrikabal from '@/images/afrikabal.png';
 import Button from './Button';
-import { FaArrowLeft, FaBars, FaCaretDown, FaCaretRight } from 'react-icons/fa';
+import { FaBars, FaCaretDown, FaCaretRight } from 'react-icons/fa';
 import { CgClose } from 'react-icons/cg';
 import Personal from './Personal';
 import Business from './Business';
@@ -27,7 +27,6 @@ function Header() {
 
     return (
         <>
-            {/* Header container */}
             <div className='flex justify-between text-sm px-12 p-3 shadow-md text-lime-600 items-center font-muli fixed top-0 w-full z-50 bg-white'>
                 <div className='flex gap-20 items-center'>
                     <Image src={afrikabal} alt="Afrikabal Logo" width={60} height={60} />
@@ -58,7 +57,7 @@ function Header() {
                 </div>
 
                 <div className='hidden rs:flex items-center gap-7'>
-                    <Link href={"/"}>Sign In</Link>
+                    <Link href={"/login"}>Sign In</Link>
                     <Button />
                 </div>
 
@@ -74,17 +73,13 @@ function Header() {
                     )}
                 </span>
             </div>
-
-            {/* Spacer to prevent content from being hidden under the fixed header */}
             <div className='h-[80px]' />
-
-            {/* Mobile menu and toggled views */}
             {toggle && toggleComponent === 0 && (
                 <div className='rs:hidden w-screen my-5'>
                     <div className='flex gap-7'>
                         <Button />
                         <button className='p-2 px-8 text-sm bg-green-100 rounded-xl font-bold text-lime-600 w-fit hover:translate-y-[-5px]'>
-                            Sign In
+                            <a href="/login">Sign In</a>
                         </button>
                     </div>
                     <div className='w-screen text-lime-600'>
@@ -121,8 +116,6 @@ function Header() {
                     </div>
                 </div>
             )}
-
-            {/* Toggled component views */}
             <>
                 {toggleComponent === 1 && (
                     <div className='relative group flex items-center gap-2'>

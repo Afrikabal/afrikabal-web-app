@@ -1,4 +1,5 @@
 "use client";
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { IoMdEyeOff } from "react-icons/io";
@@ -14,17 +15,47 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+=======
+import React, { useState } from 'react';
+import { MdOutlineArrowBackIos } from "react-icons/md";
+import { IoMdEyeOff } from "react-icons/io";
+import { FaEye, FaLock } from "react-icons/fa6";
+import Link from 'next/link';
+import Image from 'next/image';
+import Afrikabal from '@/images/afrikabal.png';
+
+const Signup = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+>>>>>>> main
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // New loading state
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Set loading state to true when form submission starts
+    setLoading(true);
+
     if (password === confirmPassword) {
+<<<<<<< HEAD
       console.log("Form Submitted", { email, password });
+=======
+      // Simulate an async request, e.g., API call
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      console.log('Form Submitted', { email, password });
+>>>>>>> main
     } else {
       alert("Passwords do not match");
     }
+
+    // Set loading state to false when done
+    setLoading(false);
   };
 
   return (
