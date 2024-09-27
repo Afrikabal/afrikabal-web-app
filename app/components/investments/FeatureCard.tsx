@@ -1,6 +1,6 @@
 import React from 'react'
 import { BiSolidPieChart } from "react-icons/bi";
-import {  FaCreditCard, FaSitemap, FaPiggyBank, FaPaperPlane} from 'react-icons/fa';
+import {  FaCreditCard, FaSitemap, FaPaperPlane} from 'react-icons/fa';
 
 function FeatureCard() {
     const features = [

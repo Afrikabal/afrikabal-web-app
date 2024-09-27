@@ -20,7 +20,7 @@ function DebitBanner() {
 
               </h1>
               <p className="text-gray-600 mb-6">
-                  You can pick up your card from us or we'll deliver it to you, no maintenance fee included!
+                  You can pick up your card from us or we&apos;ll deliver it to you, no maintenance fee included!
 
 
               </p>
