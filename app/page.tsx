@@ -1,14 +1,14 @@
 "use client";
-import BodyContent from '@/app/components/BodyContent';
+import BodyContent from '@/app/components/landing/BodyContent';
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
-import Footer from '@/app/components/Footer';
+import Footer from '@/app/components/landing/Footer';
 import gif from '@/images/harvest.png'
-import LandingLayout from './components/LandingLayout';
-import Header from './components/Header';
+import LandingLayout from './components/landing/LandingLayout';
+import Header from './components/landing/Header';
 import AppStore from '@/images/app_store.png'
 import GooglePlay from '@/images/googleplay-removebg-preview.png'
-import Loader from './components/Loader';
+import Loader from './components/landing/Loader';
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
