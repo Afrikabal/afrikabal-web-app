@@ -1,8 +1,6 @@
 import React from 'react'
 import { TbMoneybag } from 'react-icons/tb'
-import { FaPaperPlane } from 'react-icons/fa'
-import { MdBarChart } from 'react-icons/md';
-
+import { FaGlobe, FaPaperPlane } from 'react-icons/fa'
 
 function More() {
   return (
@@ -14,12 +12,13 @@ function More() {
               <div className="bg-white border rounded-lg shadow-lg p-6 text-center">
                   <div className="bg-purple-100 p-3 inline-block rounded-full mb-4">
                       <span className="w-6 h-6 text-lime-600">
-                          <MdBarChart />
+                          <FaPaperPlane />
                       </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-lime-600">Investment</h3>
+                  <h3 className="text-xl font-semibold text-lime-600">Transfer & Spend</h3>
                   <p className="text-gray-600 mt-2">
-                      Invest in US stocks with your naira, earn dividends, and get real-time updates on your Afrikabal app.
+                      Send money for free to any Nigerian account with 25 free transfers every month.
+
                   </p>
                   <a href="#" className="text-lime-600 hover:underline mt-4 block">Learn more →</a>
               </div>
@@ -27,12 +26,13 @@ function More() {
               <div className="bg-white border rounded-lg shadow-lg p-6 text-center">
                   <div className="bg-purple-100 p-3 inline-block rounded-full mb-4">
                       <span className="w-6 h-6 text-lime-600">
-                          <FaPaperPlane />
+                          <FaGlobe />
                       </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-lime-600">Transfer & Spend</h3>
+                  <h3 className="text-xl font-semibold text-lime-600">Cardless Payment</h3>
                   <p className="text-gray-600 mt-2">
-                      Send money for free to any Nigerian account with 25 free transfers every month.
+                      Use Pay ID, Pay With USSD, or free transfers to make quick and safe payments without a debit card.
+
                   </p>
                   <a href="#" className="text-lime-600 hover:underline mt-4 block">Learn more →</a>
               </div>

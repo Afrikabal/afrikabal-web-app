@@ -26,10 +26,10 @@ function Footer() {
                           <h3 className="text-lg font-semibold text-lime-600">Personal</h3>
                           <ul>
                               <li><a href="/" className="hover:text-lime-600">Discover Personal</a></li>
-                              <li><a href="/" className="hover:text-lime-600">Transfer & Spend</a></li>
-                              <li><a href="/" className="hover:text-lime-600">Save</a></li>
-                              <li><a href="/" className="hover:text-lime-600">Investments</a></li>
-                              <li><a href="/" className="hover:text-lime-600">Kuda card</a></li>
+                              <li><a href="/spend" className="hover:text-lime-600">Transfer & Spend</a></li>
+                              <li><a href="/save" className="hover:text-lime-600">Save</a></li>
+                              <li><a href="/investments" className="hover:text-lime-600">Investments</a></li>
+                              <li><a href="/cards" className="hover:text-lime-600">Kuda card</a></li>
                           </ul>
                       </div>
                       <div>

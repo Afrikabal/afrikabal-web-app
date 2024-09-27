@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Manage from '@/images/calendar.jpg'
+import Manage from '@/images/atm.jpg'
 function ManagementBanner() {
   return (
       
@@ -8,13 +8,13 @@ function ManagementBanner() {
           
           <div className="max-w-lg text-center md:text-left">
               <h1 className="text-xl md:text-5xl font-bold text-lime-600 mb-4">
-                  Meet your money <br /> goals every time.
+                  Need to pay with <br /> cash? Use your <br /> Afrikabal card at ATMs <br /> nationwide.
               </h1>
               <p className="text-gray-600 mb-6">
-                  Save daily, weekly or monthly, that&apos;s up to you. Whichever way, our Save Frequently Pocket will make it a breeze to put money away regularly.
+                  The Afrikabal card is accepted at ATMs across Nigeria.
               </p>
               <a href="#" className="text-lime-600 font-semibold hover:underline">
-                  Learn more about a save Frequently Pocket &rarr;
+                  Learn more about cards &rarr;
               </a>
           </div>
           <div className="relative mt-8 md:mt-0 p-6 px-6">
