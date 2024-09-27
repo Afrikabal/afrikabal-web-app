@@ -9,7 +9,6 @@ import { IoChevronDown } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import Afrikabal from "@/images/afrikabal.png";
-import "../globals.css";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
