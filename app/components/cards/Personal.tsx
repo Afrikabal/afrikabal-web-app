@@ -56,7 +56,7 @@ function Personal() {
             <div className='p-2 px-5 bg-neutral-100'>
                 <ul className="flex text-nowrap flex-col gap-2 text-gray-600">
                   <h3 className="text-xs text-gray-500 font-normal">PAYMENTS</h3>
-                  <a href="/">
+                  <a href="/electricity">
                     <li className="flex items-center gap-1 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-red-100 text-red-600 p-1 rounded-full '>
                             <FaLightbulb />
@@ -64,7 +64,7 @@ function Personal() {
                         Electricity
                       </li>
                   </a>
-                  <a href="/">
+                  <a href="/airtime">
                     <li className="flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-purple-100 text-purple-600 p-1 rounded-full'>
                             <FaMobileAlt />
@@ -72,7 +72,7 @@ function Personal() {
                         Airtime
                       </li>
                   </a>
-                  <a href="/">
+                  <a href="/internet">
                     <li className="flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-sky-100 text-sky-400 p-1 rounded-full'>
                             <FaWifi />
@@ -80,7 +80,8 @@ function Personal() {
                         Internet
                       </li>
                   </a>
-                  <a href="/">
+                        
+                    <a href="/gifts">
                     <li className="flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-green-100 text-lime-600 p-1 rounded-full'>
                             <FaGift />
