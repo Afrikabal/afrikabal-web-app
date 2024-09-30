@@ -89,7 +89,7 @@ function Personal() {
                         Gift Cards
                       </li>
                   </a>
-                  <a href="/">
+                  <a href="/cardless-payments">
                     <li className="flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-orange-100 text-orange-600 p-1 rounded-full'>
                             <FaGlobe />
