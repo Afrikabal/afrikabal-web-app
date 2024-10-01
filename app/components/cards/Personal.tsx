@@ -97,7 +97,7 @@ function Personal() {
                         Cardless Payments
                       </li>
                   </a>
-                  <a href="/">
+                  <a href="/telev">
                     <li className="flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-sky-100 text-sky-400 p-1 rounded-full'>
                             <FaTv />
@@ -105,7 +105,7 @@ function Personal() {
                         TV
                       </li>
                   </a>
-                  <a href="/">
+                  <a href="/betting">
                     <li className="flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-red-100 text-red-600 p-1 rounded-full  '>
                             <BsFillSuitSpadeFill />
@@ -113,7 +113,7 @@ function Personal() {
                         Betting
                       </li>
                   </a>
-                  <a href="/">
+                  <a href="/transport">
                     <li className="flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer">
                         <span className='icon-wrapper bg-purple-100 text-purple-600 p-1 rounded-full'>
                             <FaCarAlt />
@@ -124,7 +124,7 @@ function Personal() {
                 </ul>
                 <ul className='flex text-nowrap flex-col gap-3 text-gray-600'>
                   <h3 className='text-xs text-gray-500 font-normal'>CREDITS</h3>
-                  <a href="/">
+                  <a href="/overdrafts">
                     <li className='flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer'>
                         <span className='icon-wrapper bg-sky-100 text-sky-400 p-1 rounded-full'>
                             <FaLifeRing />
@@ -134,7 +134,7 @@ function Personal() {
 
                     </li>
                   </a>
-                  <a href="/">
+                  <a href="/salary-loan">
                     <li className='flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer'>
                         <span className='icon-wrapper bg-orange-100 text-orange-600 p-1 rounded-full'>
                             <FaCoins />
@@ -144,7 +144,7 @@ function Personal() {
                       </li>
                   </a>
 
-                  <a href="/">
+                  <a href="/loans">
                     <li className='flex items-center gap-2 hover:bg-gray-200 p-1 rounded-md hover:text-lime-600 cursor-pointer'>
                         <span className='icon-wrapper bg-green-100 text-lime-600 p-1    rounded-full'>
                             <TbMoneybag />
