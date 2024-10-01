@@ -9,6 +9,7 @@ import { IoChevronDown } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import Afrikabal from "@/images/afrikabal.png";
+import HelpDropUp from "../components/signup/HelpDropUp";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -33,8 +34,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen scroll-mx-0 pt-2 pb-8 h-full  md:text-sm">
-      <div className="mb-8 shadow-md  py-3 z-[100] bg-white">
+    <div className="bg-white min-h-screen scroll-mx-0 pt-2 pb-8 h-full md:text-sm font-pacifico">
+      <div className="fixed w-full top-0 left-0 mb-8 shadow-md  py-3 z-[100] bg-white">
         <Link href="/landing">
           <Image
             alt="Afrikabal logo"
@@ -46,7 +47,7 @@ const Signup = () => {
         </Link>
       </div>
 
-      <div className="w-auto md:w-1/3 bg-lime-50 mx-12 rounded-md text-xs lg:w-1/3">
+      <div className="w-auto md:w-1/3 bg-lime-50 mx-12 rounded-md text-xs lg:w-1/3 mt-20">
         <div className="grid grid-cols-1 space-x-8 text-lime-600 relative  mx-6 py-2">
           <p>
             <FaLock className="absolute mt-2" />
@@ -104,12 +105,12 @@ const Signup = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           {showPassword ? (
-            <FaEye
+            <IoMdEyeOff
               className="absolute bottom-0 mb-3 right-6 text-black/50 cursor-pointer"
               onClick={() => setShowPassword(!showPassword)}
             />
           ) : (
-            <IoMdEyeOff
+            <FaEye
               className="absolute bottom-0 mb-3 right-6 text-black/50 cursor-pointer"
               onClick={() => setShowPassword(!showPassword)}
             />
@@ -128,12 +129,12 @@ const Signup = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
           {showConfirmPassword ? (
-            <FaEye
+            <IoMdEyeOff
               className="absolute bottom-0 mb-3 right-6 text-black/50 cursor-pointer"
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
             />
           ) : (
-            <IoMdEyeOff
+            <FaEye
               className="absolute bottom-0 mb-3 right-6 text-black/50 cursor-pointer"
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
             />
@@ -177,8 +178,8 @@ const Signup = () => {
       </form>
 
       {showHelp && (
-        <div className="fixed bottom-20 right-4 bg-lime-200 text-black rounded-lg shadow-md p-4 w-60">
-          <p>This is my drop-up content!</p>
+        <div className="fixed bottom-16 right-4 z-[1000]">
+          <HelpDropUp />
         </div>
       )}
 
