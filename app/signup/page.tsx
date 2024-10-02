@@ -20,16 +20,23 @@ const Signup = () => {
   const [showHelp, setShowHelp] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  const isValidEmail = email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+  const isValidPassword =
+    password.length >= 8 && /\d/.test(password) && /[a-zA-Z]/.test(password);
+  const isPasswordsMatching = password === confirmPassword;
+  const isFormValid = isValidEmail && isValidPassword && isPasswordsMatching;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     setLoading(true);
 
-    if (password === confirmPassword) {
+    if (isFormValid) {
       console.log("Form Submitted", { email, password });
     } else {
-      alert("Passwords do not match");
+      alert("Please ensure the form is correctly filled out.");
     }
+
     setLoading(false);
   };
 
@@ -140,12 +147,15 @@ const Signup = () => {
             />
           )}
         </div>
+        {!isPasswordsMatching && confirmPassword && (
+          <p className="text-red-500 text-xs mt-1">Passwords do not match</p>
+        )}
         <button
           type="submit"
-          className={`bg-lime-600 rounded-md text-white text-sm font-semibold my-3 text-center py-1 w-1/3 h-10 ${
-            loading ? "cursor-not-allowed" : ""
-          }`}
-          disabled={loading}
+          className={`${
+            isFormValid ? "bg-lime-600" : "bg-lime-200 cursor-not-allowed"
+          } rounded-md text-white text-sm font-semibold my-3 text-center py-1 w-1/3 h-10`}
+          disabled={!isFormValid || loading}
         >
           {loading ? (
             <div className="flex items-center justify-center">
