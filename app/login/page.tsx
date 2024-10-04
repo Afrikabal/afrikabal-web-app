@@ -105,12 +105,12 @@ const Login = () => {
           </Link>
         </div>
 
-        <button
-          type="submit"
+        <Link
+          href={"/spendAcc"}
           className="bg-lime-600 rounded-md text-white text-sm font-semibold my-3 text-center py-1 w-1/3 h-10"
         >
           Sign in
-        </button>
+        </Link>
         <div className="text-xs text-black/50">
           If you don&apos;t have a Afrikabal account, download the app{" "}
           <Link href="https://bit.ly/getAfrikabal" className="text-lime-600">
