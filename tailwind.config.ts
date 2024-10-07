@@ -17,9 +17,19 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       screens: {
-        "rs": "900px",
-        "ssm": "650px"
-      }
+        "rs":"900px",
+      },
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: '0.2' },
+          '50%': { opacity: '1', fontWeight: 'bold' },
+        },
+      },
+      animation: {
+        blink1: 'blink 1.4s infinite 0.2s',
+        blink2: 'blink 1.4s infinite 0.4s',
+        blink3: 'blink 1.4s infinite 0.6s',
+      },
     },
   },
   plugins: [
