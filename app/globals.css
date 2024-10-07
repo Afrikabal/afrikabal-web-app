@@ -59,3 +59,19 @@ body {
   display: flex;
   animation: slide 40s linear infinite;
 }
+
+
+
+
+.headerRespo {
+  width: calc(100vw -  200px);
+
+}
+
+@media screen and (max-width: 650px) {
+  .headerRespo {
+    width: calc(100vw - 80px);
+
+  }
+}
+

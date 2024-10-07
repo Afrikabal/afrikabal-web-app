@@ -17,7 +17,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       screens: {
-        "rs":"900px",
+        "rs": "900px",
+        "ssm": "650px"
       }
     },
   },

@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     };
 
     return (
-        <div className="flex justify-between items-center bg-white p-5 shadow-md">
+        <div className="flex   justify-between items-center bg-white p-5 shadow-md">
             <input
                 type="text"
                 placeholder="Search"

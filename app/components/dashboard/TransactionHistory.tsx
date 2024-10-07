@@ -23,7 +23,7 @@ const TransactionHistory = () => {
     ];
 
     return (
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg overflow-x-scroll shadow-md">
             
             <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-gray-700">Transaction History</h3>
@@ -60,6 +60,8 @@ const TransactionHistory = () => {
                                 <Image
                                     src={`https://i.pravatar.cc/50?img=${transaction.id}`}
                                     alt={transaction.customerName}
+                                    width={30}
+                                    height={30}
                                     className="w-8 h-8 rounded-full mr-2"
                                 />
                                 {transaction.customerName}

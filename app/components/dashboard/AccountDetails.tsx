@@ -13,20 +13,20 @@ const AccountDetails: React.FC = () => {
     return (
         <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">View Profile</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Statement & Reports</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Saved Cards</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Get Help</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Linked Accounts</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Account Limits</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">View Profile</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Statement & Reports</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Saved Cards</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Get Help</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Linked Accounts</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Account Limits</button>
             </div>
             <div className="space-y-4">
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Security</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Legal</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">FAQs</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Chat With Us</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Hide Balance</button>
-                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600">Dark Mode</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Security</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Legal</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">FAQs</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Chat With Us</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Hide Balance</button>
+                <button className="bg-gray-100 p-3 w-full text-left text-neutral-600 shadow-lg">Dark Mode</button>
             </div>
 
             <button

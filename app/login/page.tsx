@@ -143,7 +143,9 @@ const Login = () => {
                 <br /> email address
               </p>
             </div>
-            <FaAngleRight className="text-lime-600 text-3xl mt-2 ml-4" />
+            <Link href='/login/validate-login'>
+              <FaAngleRight className="text-lime-600 text-3xl mt-2 ml-4" />
+            </Link>
           </div>
         </div>
       )}

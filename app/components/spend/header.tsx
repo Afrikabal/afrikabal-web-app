@@ -2,13 +2,18 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import afrikabal from '@/images/afrikabal.png';
 import { FaCreditCard, FaHome, FaPaperPlane, FaReceipt } from 'react-icons/fa';
 import { IoPieChart } from 'react-icons/io5';
-import { MdAccountCircle } from 'react-icons/md';
+import Profile from '@/images/profile2.jpg'
+import { useRouter } from "next/navigation";
 
 export default function Header() {
+    const router = useRouter();
+
+    const handleProfileClick = () => {
+        router.push("/account");
+    };
     return (
         <header className="bg-white shadow p-4 flex justify-between items-center fixed top-0 w-full z-50">
             <div className="text-lime-600 font-bold text-xl md:text-2xl">
@@ -40,13 +45,10 @@ export default function Header() {
                 </ul>
             </div>
 
-            <div className="flex items-center space-x-2">
-                <Link href="/account">
-                    <div className="hidden md:flex items-center space-x-2 bg-lime-200 p-2 rounded-full cursor-pointer">
-                        <MdAccountCircle className="text-2xl" />
-                        <span className="text-gray-600">Account</span>
-                    </div>
-                </Link>
+            <div className="flex items-center space-x-4">
+                <button onClick={handleProfileClick}>
+                    <Image src={Profile} className="w-10 h-7 rounded-full" alt="Profile" />
+                </button>
             </div>
         </header>
     );
