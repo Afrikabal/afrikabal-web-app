@@ -8,6 +8,7 @@ import Image from "next/image";
 import Afrikabal from "@/images/afrikabal.png";
 import { BiSolidMessageRoundedError } from "react-icons/bi";
 import { IoChevronDown } from "react-icons/io5";
+import HelpDropUp from "../components/login/HelpDropUp";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -22,8 +23,8 @@ const Login = () => {
   
 
   return (
-    <div className="bg-white min-h-screen scroll-mx-0 pt-2 pb-8 h-full md:text-sm">
-      <div className="flex justify-between sticky top-0 left 0 shadow-md w-full h-16 px-6 py-2 bg-white z-[100]">
+    <div className="bg-white min-h-screen scroll-mx-0 pt-2 pb-8 h-full md:text-sm font-pacifico">
+      <div className="flex justify-between fixed top-0 left 0 shadow-md w-full h-16 px-6 py-2 bg-white z-[100]">
         <Link href="/landing">
           <Image alt="Afrikabal logo" src={Afrikabal} width={60} height={60} />
         </Link>
@@ -34,7 +35,7 @@ const Login = () => {
         </Link>
       </div>
 
-      <div className="w-auto md:w-1/3 bg-lime-50 mx-12 rounded-md text-xs lg:w-1/3 mt-4">
+      <div className="w-auto md:w-1/3 bg-lime-50 mx-12 rounded-md text-xs lg:w-1/3 mt-20">
         <div className="grid grid-cols-1 space-x-8 text-lime-600 mx-6 py-2">
           <p>
             <FaLock className="absolute mt-2" />
@@ -104,12 +105,12 @@ const Login = () => {
           </Link>
         </div>
 
-        <button
-          type="submit"
+        <Link
+          href={"/spendAcc"}
           className="bg-lime-600 rounded-md text-white text-sm font-semibold my-3 text-center py-1 w-1/3 h-10"
         >
           Sign in
-        </button>
+        </Link>
         <div className="text-xs text-black/50">
           If you don&apos;t have a Afrikabal account, download the app{" "}
           <Link href="https://bit.ly/getAfrikabal" className="text-lime-600">
@@ -119,21 +120,21 @@ const Login = () => {
         </div>
       </form>
       {showHelp && (
-        <div className="fixed bottom-20 right-4 bg-lime-200 text-black rounded-lg shadow-md p-4 w-60">
-          <p>This is my drop-up content!</p>
+        <div className="fixed bottom-16 right-4">
+          <HelpDropUp/>
         </div>
       )}
 
       {showHelp ? (
         <div
-          className="bg-lime-600 text-white rounded-full fixed right-4 bottom-4 shadow-lime-500 transition-transform duration-300 hover:scale-110 p-2 text-3xl cursor-pointer"
+          className="bg-lime-600 text-white rounded-full fixed right-2 bottom-4 shadow-lime-500 transition-transform duration-300 hover:scale-110 p-2 text-3xl cursor-pointer"
           onClick={() => setShowHelp(!showHelp)}
         >
           <IoChevronDown />
         </div>
       ) : (
         <div
-          className="bg-lime-600 text-white rounded-full fixed right-4 bottom-4 shadow-lime-500 transition-transform duration-300 hover:scale-110 p-2 text-3xl cursor-pointer"
+          className="bg-lime-600 text-white rounded-full fixed right-2 bottom-4 shadow-lime-500 transition-transform duration-300 hover:scale-110 p-2 text-3xl cursor-pointer"
           onClick={() => setShowHelp(!showHelp)}
         >
           <BiSolidMessageRoundedError />
