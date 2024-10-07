@@ -36,7 +36,7 @@ const ValidateLoginWithEmail = () => {
       setLoading(false);
       setOtp(["", "", "", "", ""]);
       setIsButtonEnabled(false);
-      inputRefs.current[0]?.focus(); 
+      inputRefs.current[0]?.focus();
     }, 2000);
   };
 
@@ -53,12 +53,13 @@ const ValidateLoginWithEmail = () => {
         <p className="font-bold text-sm text-black">example@gmail.com</p>
       </div>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mt-4">
         {otp.map((value, index) => (
           <input
             key={index}
             type="text"
-            className="border border-gray-300 rounded w-10 h-10 text-center text-xl"
+            className="border border-gray-300 rounded w-10 h-10 text-center text-black/50 text-xl"
+            placeholder="-"
             maxLength={1}
             value={value}
             onChange={(e) => handleChange(e.target.value, index)}
@@ -73,15 +74,24 @@ const ValidateLoginWithEmail = () => {
       <button
         className={`${
           loading
-            ? "bg-gray-400 cursor-not-allowed"
+            ? "bg-lime-200 cursor-not-allowed"
             : isButtonEnabled
             ? "bg-lime-600"
             : "bg-lime-200 cursor-not-allowed"
-        } text-white text-sm font-semibold py-2 rounded-md w-1/3 h-10`}
-        disabled={!isButtonEnabled || loading} 
-        onClick={handleSubmit} 
+        } rounded-md text-white text-sm font-semibold my-4 text-center py-1 w-auto h-10 lg:w-1/3`}
+        disabled={!isButtonEnabled || loading}
+        onClick={handleSubmit}
       >
-        {loading ? "Loading ..." : "Sign In"}
+        {loading ? (
+          <span>
+            Loading
+            <span className="animate-blink1">.</span>
+            <span className="animate-blink2">.</span>
+            <span className="animate-blink3">.</span>
+          </span>
+        ) : (
+          "Reset"
+        )}
       </button>
     </div>
   );
