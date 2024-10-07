@@ -1,13 +1,12 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import { IoMdEyeOff } from "react-icons/io";
+import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 import { FaEye, FaCheckCircle } from "react-icons/fa";
 import { FaLock } from "react-icons/fa6";
-import Link from "next/link";
-import Image from "next/image";
-import Afrikabal from "@/images/afrikabal.png";
 import { CiCircleMinus } from "react-icons/ci";
-import { useRouter } from "next/compat/router";
+import { IoMdEyeOff } from "react-icons/io";
+import Image from "next/image";
+import Link from "next/link";
+import Afrikabal from "@/images/afrikabal.png";
 
 const ResetPasswordForm = () => {
   const router = useRouter();
@@ -41,12 +40,8 @@ const ResetPasswordForm = () => {
     if (password === confirmPassword) {
       console.log("Form Submitted");
 
-      setTimeout(() => {
-        setLoading(false);
-        if (router && router.isReady) {
-          router.push("/reset-password/confirm");
-        }
-      }, 2000);
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await router.push("/reset-password/confirm");
     } else {
       alert("Passwords do not match");
       setLoading(false);
@@ -81,13 +76,6 @@ const ResetPasswordForm = () => {
         onSubmit={handleSubmit}
         className="md:w-1/3 grid grid-cols-1 mx-12 mt-8 justify-between left-4 px-6 py-12 bg-white rounded-md border border-black/10 shadow-md"
       >
-        <div>
-          <p className="text-black font-bold text-lg">Reset Password</p>
-          <p className="text-black/50 font-light text-xs w-72 my-2 grid grid-cols-2 lg:grid-cols-1">
-            Please enter your new password
-          </p>
-        </div>
-
         <div className="flex flex-col my-3 relative">
           <label className="text-black/80 font-light text-sm">
             New Password
